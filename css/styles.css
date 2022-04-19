@@ -1,0 +1,253 @@
+  /*-------------------Main Styles -------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: rgb(143, 180, 187);
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  img {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  /*-------------------Navigation Styles -------------------*/
+  nav {
+    font-family: "Orbitron", Arial, Verdana;
+    font-weight: 400;
+    letter-spacing: .05em;
+    padding: 25px;
+    background-color: rgb(97, 162, 142); 
+  }
+
+  h1, h2, p, .top-nav {
+    text-align: center;
+  }
+  
+  .top-nav, .top-nav li {
+    width: 100%;
+  }
+
+  h1 a, .top-nav a {
+    color: #000;
+  }
+
+  .top-nav {
+    margin-top: 30px;
+  }
+  
+  .top-nav li {
+    padding: 10px 0;
+    margin: 5px auto;
+    background-color: #fff;
+  }
+  
+  .top-nav a {
+    text-transform: uppercase;
+  }
+
+
+  /*-------------------Profile Styles -------------------*/
+
+ .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 5px 20px;
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .profile-picture {
+    max-width: 75%;
+    margin-bottom: 20px;
+  }
+
+    /*-------------------Portfolio Styles -------------------*/
+
+  #portfolio, #skills {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #fff;
+  }
+
+  .container {
+    max-width: 1100px;
+    padding: 10px; 
+    margin: 0 0 0 0;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 10px;
+    min-height: 250px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+  }
+
+  .titles {
+    font-size: large;
+    padding: 1rem 0 1rem;
+    margin: auto
+  }
+
+  .box-1 {
+    background-color: #e6e6e6;
+  }
+  
+  .box-2 {
+    background-color: #e6e6e6;
+  }
+  
+  .box-3 {
+    background-color: #e6e6e6;
+  }
+  
+  .box-4 {
+    background-color: #e6e6e6;
+  }
+  
+  .box-5 {
+    background-color: #e6e6e6;
+  }
+  
+  .box-6 {
+    background-color: #e6e6e6;
+  }
+
+/*-------------------Skills Styles -------------------*/
+
+
+
+
+    
+  /*-------------------Contact Styles -------------------*/
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem 3rem;
+    margin: auto;
+ 
+  }
+
+  /*-------------------Footer Styles -------------------*/
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Orbitron", Arial, Verdana;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    border-top: thin solid #000;
+    
+  }
+  .full {
+    display: none;
+  }
+
+      /*------------------- Media Queries -------------------*/
+
+  @media (min-width: 768px) {
+
+    .top-nav {
+      margin-top: 0;
+    }
+  
+    .top-nav li {
+      display: inline-block;
+      width: auto;
+      margin-right: 15px;
+      background-color: transparent;
+    }
+  
+    .top-nav li:last-child {
+      margin-right: 0;
+    }
+  
+    .top-nav a {
+      color: #000;
+    }
+
+    #intro {
+      text-align: left;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex-basis: calc(50% - 20px);
+    }
+
+    .top {
+      display: none;
+    }
+    .full {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    nav  {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .top-nav, .top-nav li {
+      width: initial;
+      margin-bottom: 0;
+    }
+
+    .col {
+      flex-basis: calc(33.333% - 20px);
+    }
+  }
